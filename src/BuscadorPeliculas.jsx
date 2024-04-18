@@ -1,9 +1,9 @@
 import { useState } from "react"
-
 const BuscadorPeliculas = () => {
 
   const urlBase = "https://api.themoviedb.org/3/search/movie"
-  const APIKEY = "INSERT_API_KEY"
+
+  const APIKEY = import.meta.env.VITE_APP_API_KEY
 
   const [busqueda, SetBusqueda] = useState('')
 
